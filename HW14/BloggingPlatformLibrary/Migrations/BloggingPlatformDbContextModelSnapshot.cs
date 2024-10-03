@@ -48,7 +48,7 @@ namespace BloggingPlatformLibrary.Migrations
 
                     b.HasIndex("AuthorId");
 
-                    b.ToTable("Articles");
+                    b.ToTable("Articles", (string)null);
                 });
 
             modelBuilder.Entity("BloggingPlatformLibrary.Models.Author", b =>
@@ -68,7 +68,7 @@ namespace BloggingPlatformLibrary.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Authors");
+                    b.ToTable("Authors", (string)null);
                 });
 
             modelBuilder.Entity("BloggingPlatformLibrary.Models.Comment", b =>
@@ -100,7 +100,7 @@ namespace BloggingPlatformLibrary.Migrations
 
                     b.HasIndex("ArticleId");
 
-                    b.ToTable("Comments");
+                    b.ToTable("Comments", (string)null);
                 });
 
             modelBuilder.Entity("BloggingPlatformLibrary.Models.Article", b =>

@@ -41,6 +41,13 @@ namespace BloggingPlatformLibrary.Data
 				.Property(c => c.Content)
 				.IsRequired();
 
+			modelBuilder.Entity<Author>()
+				.HasMany<Article>(a => a.Articles)
+				.WithOne(ar => ar.Author);
+
+			modelBuilder.Entity<Article>()
+				.HasMany<Comment>(ar => ar.Comments)
+				.WithOne(c => c.Article);
 
 			modelBuilder.Entity<Article>()
 				.HasOne<Author>(ar => ar.Author)
