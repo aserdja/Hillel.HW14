@@ -26,6 +26,16 @@ namespace BloggingPlatformLibrary.Repositories
 			return await _context.Comments.Where(a => a.Id == id).FirstAsync();
 		}
 
+		public async Task<IEnumerable<Comment>> GetAll()
+		{
+			return await _context.Comments.ToListAsync();
+		}
+
+		public async Task<IEnumerable<Comment>> GetAllById(int id)
+		{
+			return await _context.Comments.Where(c => c.ArticleId == id).ToListAsync();
+		}
+
 		public async Task Update(Comment entity)
 		{
 			_context.Update(entity);

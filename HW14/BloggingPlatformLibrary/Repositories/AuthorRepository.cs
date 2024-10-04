@@ -26,6 +26,16 @@ namespace BloggingPlatformLibrary.Repositories
 			return await _context.Authors.Where(a => a.Id == id).FirstAsync();
 		}
 
+		public async Task<IEnumerable<Author>> GetAll()
+		{
+			return await _context.Authors.ToListAsync();
+		}
+
+		public Task<IEnumerable<Author>> GetAllById(int id)
+		{
+			throw new NotImplementedException();
+		}
+
 		public async Task Update(Author entity)
 		{
 			_context.Update(entity);
