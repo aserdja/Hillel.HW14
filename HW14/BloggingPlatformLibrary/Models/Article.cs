@@ -11,13 +11,5 @@
 		public Author Author { get; set; } = null!;
 
 		public ICollection<Comment>? Comments { get; set; }
-
-
-		public Article(string title, string content, Author authorOfArticle)
-		{
-			Title = title;
-			Content = content;
-			PublicationDate = DateOnly.Parse(DateTime.Now.Date.ToString());
-		}
 	}
 }

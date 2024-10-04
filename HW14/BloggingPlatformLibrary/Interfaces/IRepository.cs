@@ -2,9 +2,9 @@
 {
 	public interface IRepository<T>
 	{
-		void Add(T entity);
-		void Update(T entity);
-		void Delete(T entity);
-		T Get(int id);
+		Task Add(T entity);
+		Task Update(T entity);
+		Task Delete(T entity);
+		Task<T> Get(int id);
 	}
 }

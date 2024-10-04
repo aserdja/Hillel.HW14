@@ -10,15 +10,5 @@
 
 		public int ArticleId { get; set; }
 		public Article Article { get; set; } = null!;
-
-
-		public Comment(string userName, string content, Rating rating, Article article)
-		{
-			UserName = userName;
-			Content = content;
-			WritingDateTime = DateTime.Now;
-			Rating = rating;
-			Article = article;
-		}
 	}
 }
