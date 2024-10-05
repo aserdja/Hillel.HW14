@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW14", "HW14\HW14.csproj", "{3B7368EE-C4CC-4588-AF41-45198CFD30EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW14", "HW14\HW14.csproj", "{3B7368EE-C4CC-4588-AF41-45198CFD30EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloggingPlatformLibrary", "BloggingPlatformLibrary\BloggingPlatformLibrary.csproj", "{FD9D9A8A-2A7B-4F78-962F-76660982FBD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BloggingPlatformLibrary", "BloggingPlatformLibrary\BloggingPlatformLibrary.csproj", "{FD9D9A8A-2A7B-4F78-962F-76660982FBD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelBookingLibrary", "HotelBookingLibrary\HotelBookingLibrary.csproj", "{F7EF9F19-2D4B-43AE-BEC6-42949088B3CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FD9D9A8A-2A7B-4F78-962F-76660982FBD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD9D9A8A-2A7B-4F78-962F-76660982FBD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD9D9A8A-2A7B-4F78-962F-76660982FBD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7EF9F19-2D4B-43AE-BEC6-42949088B3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7EF9F19-2D4B-43AE-BEC6-42949088B3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7EF9F19-2D4B-43AE-BEC6-42949088B3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7EF9F19-2D4B-43AE-BEC6-42949088B3CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
