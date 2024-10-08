@@ -26,6 +26,16 @@ namespace HotelBookingLibrary.Repositories
 			return await _context.HotelRooms.Where(hr => hr.Id == id).FirstAsync();
 		}
 
+		public async Task<IEnumerable<HotelRoom>> GetAll()
+		{
+			return await _context.HotelRooms.ToListAsync();
+		}
+
+		public Task<IEnumerable<HotelRoom>> GetAllById(int id)
+		{
+			throw new NotImplementedException();
+		}
+
 		public async Task Update(HotelRoom entity)
 		{
 			_context.HotelRooms.Update(entity);

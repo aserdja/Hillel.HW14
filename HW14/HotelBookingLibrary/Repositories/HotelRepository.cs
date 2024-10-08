@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HotelBookingLibrary.Repositories
 {
-	internal class HotelRepository(HotelBookingDbContext context) : IRepository<Hotel>
+	public class HotelRepository(HotelBookingDbContext context) : IRepository<Hotel>
 	{
 		private readonly HotelBookingDbContext _context = context;
 
@@ -24,6 +24,16 @@ namespace HotelBookingLibrary.Repositories
 		public async Task<Hotel> Get(int id)
 		{
 			return await _context.Hotels.Where(h => h.Id == id).FirstAsync();
+		}
+
+		public async Task<IEnumerable<Hotel>> GetAll()
+		{
+			return await _context.Hotels.ToListAsync();
+		}
+
+		public Task<IEnumerable<Hotel>> GetAllById(int id)
+		{
+			throw new NotImplementedException();
 		}
 
 		public async Task Update(Hotel entity)
