@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BloggingPlatformLibrary\BloggingPlatformLibrary.csproj" />
+    <ProjectReference Include="..\HotelBookingLibrary\HotelBookingLibrary.csproj" />
   </ItemGroup>
 
 </Project>
