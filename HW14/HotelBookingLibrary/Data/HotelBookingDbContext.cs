@@ -11,7 +11,7 @@ namespace HotelBookingLibrary.Data
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BloggingPlatform;Integrated Security=True");
+			optionsBuilder.UseSqlServer();
 		}
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
