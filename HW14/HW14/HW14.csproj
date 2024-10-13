@@ -10,6 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BloggingPlatformLibrary\BloggingPlatformLibrary.csproj" />
     <ProjectReference Include="..\HotelBookingLibrary\HotelBookingLibrary.csproj" />
+    <ProjectReference Include="..\LibraryPlatform\LibraryPlatform.csproj" />
   </ItemGroup>
 
 </Project>
