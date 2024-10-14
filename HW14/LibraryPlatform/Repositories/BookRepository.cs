@@ -26,6 +26,21 @@ namespace LibraryPlatform.Repositories
 			return await _context.Books.ToListAsync();
 		}
 
+		public async Task<IEnumerable<Book>> GetByAuthor(string authorName)
+		{
+			return await _context.Books.Where(b => b.Author.Contains(authorName)).ToListAsync();
+		}
+
+		public async Task<IEnumerable<Book>> GetByTitle(string title)
+		{
+			return await _context.Books.Where(b => b.Title.Contains(title)).ToListAsync();
+		}
+
+		public async Task<IEnumerable<Book>> GetByAuthorAndTitle(string authorName, string title)
+		{
+			return await _context.Books.Where(b => b.Author.Contains(authorName) && b.Title.Contains(title)).ToListAsync();
+		}
+
 		public async Task Update(Book entity)
 		{
 			_context.Books.Update(entity);

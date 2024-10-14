@@ -26,6 +26,11 @@ namespace LibraryPlatform.Repositories
 			return await _context.BooksRentals.ToListAsync();
 		}
 
+		public async Task<IEnumerable<BookRental>> GetAllByBook(Book book)
+		{
+			return await _context.BooksRentals.Where(br => br.Book ==  book).ToListAsync();
+		}
+
 		public async Task Update(BookRental entity)
 		{
 			_context.BooksRentals.Update(entity);
